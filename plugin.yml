@@ -1,0 +1,8 @@
+name: MiniGames
+main: minigames.MiniGames
+author: w4rgo
+version: 0.1
+commands:
+  inventory:
+    Description: save , delete or restore inventory
+    Usage: /inventory
