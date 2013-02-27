@@ -38,7 +38,7 @@ public class GameDAO {
         public static void saveGame(Game game) {
             try {
                 //Save The Inventory(gameId,type,winner,duration)
-                PreparedStatement prep = DbConnect.getConn().prepareStatement("nsert into game values (null ,? , null);");
+                PreparedStatement prep = DbConnect.getConn().prepareStatement("insert into game values (null ,? , null);");
                 prep.setObject(2, game.getType());
                 prep.executeBatch();
                 
@@ -49,4 +49,4 @@ public class GameDAO {
         
 
     }
-}
+
